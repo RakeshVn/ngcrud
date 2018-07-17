@@ -1,0 +1,18 @@
+** Ramu look at console | Press (F12)
+
+<div style="width: 30%;">
+  <form #signupForm="ngForm" (ngSubmit)="signup(signupForm)">
+    <label>First Name</label>
+    <input ngModel type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label>Last Name</label>
+    <input ngModel type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label>Country</label>
+    <select ngModel id="country" name="country">
+      <option value="australia">India</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>

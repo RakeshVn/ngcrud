@@ -1,0 +1,28 @@
+<form #frm = "ngForm" (ngSubmit)="adduser(frm.value)">
+
+  <input type="text" name="name" ngModel>
+  <input type="text" name="email" ngModel>
+  <input type="text" name="password" ngModel>
+  <input type="submit" value="submit">
+
+</form>
+
+
+
+
+<div class="container">
+  <div *ngFor="let user of userlist" class="row">
+    <div class="col-md-3">
+        {{user.name}}
+    </div>
+    <div class="col-md-3">
+        {{user.email}}
+    </div>
+    <div class="col-md-3">
+      <button type="button" name="button" class="btn btn-primary">Edit</button>
+    </div>
+    <div class="col-md-3">
+        <button type="button" name="button" class="btn btn-danger">Delete</button>
+      </div>
+    </div>
+</div>
